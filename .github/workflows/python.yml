@@ -12,5 +12,4 @@ jobs:
         with:
           python-version: '3.x'
       - name: Run Script
-        working-directory: program1-python-hello
-        run: python hello.py
+        run: python program1-python-hello/hello.py
