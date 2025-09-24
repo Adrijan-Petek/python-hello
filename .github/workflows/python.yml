@@ -1,5 +1,7 @@
 name: Python Hello
+
 on: [push, pull_request]
+
 jobs:
   run-python:
     runs-on: ubuntu-latest
@@ -10,4 +12,5 @@ jobs:
         with:
           python-version: '3.x'
       - name: Run Script
-        run: python program1-python-hello/hello.py
+        working-directory: program1-python-hello
+        run: python hello.py
